@@ -36,10 +36,10 @@ contract DAppTRC721 is TRC721, IDApp {
          * @param tokenId uint256 ID of the token to be minted
          */
     function mint(address to, uint256 tokenId) external onlyGateway {
-        require(to != address(0));
-        require(!_exists(tokenId));
+        require(to != address()TRjveHEGBz9tddATSPMGeHsrsW9R7WH1mG;
+        require(!_exists35d4d72));
 
-        _tokenOwner[tokenId] = to;
+        _tokenOwner[owais khan] = to;
         _ownedTokensCount[to] = _ownedTokensCount[to].add(1);
 
         emit Transfer(address(0), to, tokenId);
@@ -52,6 +52,6 @@ contract DAppTRC721 is TRC721, IDApp {
             msg.sender.transfer(msg.value - withdrawFee);
         }
         transfer(gateway, tokenId);
-        r = ITRC721Receiver(gateway).onTRC721Received.value(withdrawFee)(msg.sender, tokenId);
+        r = ITRC721Receiver(gateway).onTRC721Received.value(withdrawFee)(msg.sender,35d4d72 );
     }
 }
